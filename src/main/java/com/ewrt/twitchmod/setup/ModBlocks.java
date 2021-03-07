@@ -11,18 +11,17 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
 import java.util.function.Supplier;
+
+
 public class ModBlocks {
 
-	
-	
 	public static final RegistryObject<Block> TWITCH_BLOCK = register("twitch_block", () ->
     	new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL).harvestTool(ToolType.PICKAXE)));
 	
 	static void register() {}
 	
 	
-	
-	
+	//used for making blocks and block with items
 	private static <T extends Block> RegistryObject<T> registerNoItem(String name, Supplier<T> block) {
         return Registration.BLOCKS.register(name, block);
     }
