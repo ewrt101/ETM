@@ -20,17 +20,17 @@
       credits="I'd like to thank myself."
       authors="Ewrt"
       description='''
-A work in progress mod to us when streaming minceraft
+A work in progress mod to us when streaming minecraft
       '''
 
-      [[dependencies.examplemod]]
+      [[dependencies.twitchmod]]
         modId="forge"
         mandatory=true
         versionRange="[36,)"
         ordering="NONE"
         side="BOTH"
 
-      [[dependencies.examplemod]]
+      [[dependencies.twitchmod]]
         modId="minecraft"
         mandatory=true
         versionRange="[1.16.5,1.17)"
